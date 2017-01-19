@@ -94,7 +94,7 @@
 <meta property="og:description" content="安装依赖nodemailer 这个模块在github上star数量还是挺多的。1npm install nodemailer --save
 配置主机、用户名、密码我这里选用了163的邮箱，主机是smtp.163.comqq邮箱要注意一下（在设置中开启SMTP服务才行），主机为smtp.qq.com
 1234567891011var nodemailer = require(&apos;nodemailer&apos;">
-<meta property="og:updated_time" content="2017-01-19T05:42:08.000Z">
+<meta property="og:updated_time" content="2017-01-19T07:32:03.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用node发送E-mail">
 <meta name="twitter:description" content="安装依赖nodemailer 这个模块在github上star数量还是挺多的。1npm install nodemailer --save
@@ -369,7 +369,7 @@
 <h3 id="配置邮件发送信息"><a href="#配置邮件发送信息" class="headerlink" title="配置邮件发送信息"></a>配置邮件发送信息</h3><p>这里要注意发件邮箱要与上面配置主机的邮箱一致</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> mailOptions = &#123;</div><div class="line">    <span class="attr">from</span>: <span class="string">'admin@163.com'</span>,       <span class="comment">// 发件地址</span></div><div class="line">    to: <span class="string">'test@163.com,test2@163.com'</span>,      <span class="comment">// 收件列表</span></div><div class="line">    subject: <span class="string">'邮件测试服务'</span>,          <span class="comment">// 标题</span></div><div class="line">    text: <span class="string">'Hello world！'</span>,          <span class="comment">// html、纯文本二选一</span></div><div class="line">    <span class="comment">// html: '&lt;b&gt;Hello world！&lt;/b&gt;'    // html 内容</span></div><div class="line">&#125;;</div></pre></td></tr></table></figure>
 <h3 id="发送邮件"><a href="#发送邮件" class="headerlink" title="发送邮件"></a>发送邮件</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">transporter.sendMail(mailOptions, <span class="function"><span class="keyword">function</span>(<span class="params">error, info</span>)</span>&#123;</div><div class="line">    <span class="keyword">if</span>(error)&#123;</div><div class="line">        <span class="keyword">return</span> <span class="built_in">console</span>.log(error);</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'Message sent: '</span> + info.response);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<h3 id="更多信息"><a href="#更多信息" class="headerlink" title="更多信息"></a>更多信息</h3><p><a href="https://nodemailer.com/" target="_blank" rel="external">nodemailer官网</a><br><a href="https://github.com/andris9/nodemailer-wellknown#supported-services" target="_blank" rel="external">支持那些邮箱</a></p>
+<h3 id="更多信息"><a href="#更多信息" class="headerlink" title="更多信息"></a>更多信息</h3><p><a href="https://nodemailer.com/" target="_blank" rel="external">nodemailer官网</a><br><a href="https://github.com/andris9/nodemailer-wellknown#supported-services" target="_blank" rel="external">Nodemailer Well-Known</a></p>
 
       
     </div>
@@ -496,7 +496,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
