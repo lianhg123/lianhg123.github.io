@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="随笔," />
 
 
 
@@ -84,15 +84,16 @@
 
 
 
-<meta name="description" content="每天都是一个新的开始">
-<meta property="og:type" content="website">
-<meta property="og:title" content="海纳百川">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="说点什么呢。hello world">
+<meta property="og:type" content="article">
+<meta property="og:title" content="写给自己">
+<meta property="og:url" content="http://yoursite.com/2017/01/12/思考/写给自己/index.html">
 <meta property="og:site_name" content="海纳百川">
-<meta property="og:description" content="每天都是一个新的开始">
+<meta property="og:description" content="说点什么呢。hello world">
+<meta property="og:updated_time" content="2017-01-19T05:46:36.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="海纳百川">
-<meta name="twitter:description" content="每天都是一个新的开始">
+<meta name="twitter:title" content="写给自己">
+<meta name="twitter:description" content="说点什么呢。hello world">
 
 
 
@@ -120,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/01/12/思考/写给自己/"/>
 
 
 
 
 
-  <title> 海纳百川 </title>
+  <title> 写给自己 | 海纳百川 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -147,9 +148,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-right 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -240,166 +239,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/19/node/使用node发送Email/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="liansky">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/uploads/avatar.png">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="海纳百川">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="海纳百川" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/01/19/node/使用node发送Email/" itemprop="url">
-                  使用node发送E-mail
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-19T13:41:50+08:00">
-                2017-01-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/node/" itemprop="url" rel="index">
-                    <span itemprop="name">node</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/01/19/node/使用node发送Email/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/01/19/node/使用node发送Email/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><p>nodemailer 这个模块在github上star数量还是挺多的。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install nodemailer --save</div></pre></td></tr></table></figure></p>
-<h3 id="配置主机、用户名、密码"><a href="#配置主机、用户名、密码" class="headerlink" title="配置主机、用户名、密码"></a>配置主机、用户名、密码</h3><p>我这里选用了163的邮箱，主机是smtp.163.com<br>qq邮箱要注意一下（在设置中开启SMTP服务才行），主机为smtp.qq.com</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> nodemailer = <span class="built_in">require</span>(<span class="string">'nodemailer'</span>);</div><div class="line"></div><div class="line"><span class="keyword">var</span> transporter = nodemailer.createTransport(&#123;</div><div class="line">    <span class="attr">host</span>: <span class="string">"smtp.163.com"</span>,   <span class="comment">// 主机</span></div><div class="line">    port: <span class="number">465</span>,              <span class="comment">// SMTP 端口  不启用SSL 端口为25，否则为465</span></div><div class="line">    secure: <span class="literal">true</span>,           <span class="comment">// 使用 SSL</span></div><div class="line">    auth: &#123;</div><div class="line">        <span class="attr">user</span>: <span class="string">'admin@163.com'</span>,</div><div class="line">        <span class="attr">pass</span>: <span class="string">'*******'</span> </div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<h3 id="配置邮件发送信息"><a href="#配置邮件发送信息" class="headerlink" title="配置邮件发送信息"></a>配置邮件发送信息</h3><p>这里要注意发件邮箱要与上面配置主机的邮箱一致</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> mailOptions = &#123;</div><div class="line">    <span class="attr">from</span>: <span class="string">'admin@163.com'</span>,       <span class="comment">// 发件地址</span></div><div class="line">    to: <span class="string">'test@163.com,test2@163.com'</span>,      <span class="comment">// 收件列表</span></div><div class="line">    subject: <span class="string">'邮件测试服务'</span>,          <span class="comment">// 标题</span></div><div class="line">    text: <span class="string">'Hello world！'</span>,          <span class="comment">// html、纯文本二选一</span></div><div class="line">    <span class="comment">// html: '&lt;b&gt;Hello world！&lt;/b&gt;'    // html 内容</span></div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<h3 id="发送邮件"><a href="#发送邮件" class="headerlink" title="发送邮件"></a>发送邮件</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">transporter.sendMail(mailOptions, <span class="function"><span class="keyword">function</span>(<span class="params">error, info</span>)</span>&#123;</div><div class="line">    <span class="keyword">if</span>(error)&#123;</div><div class="line">        <span class="keyword">return</span> <span class="built_in">console</span>.log(error);</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'Message sent: '</span> + info.response);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<h3 id="更多信息"><a href="#更多信息" class="headerlink" title="更多信息"></a>更多信息</h3><p><a href="https://nodemailer.com/" target="_blank" rel="external">nodemailer官网</a><br><a href="https://github.com/andris9/nodemailer-wellknown#supported-services" target="_blank" rel="external">支持那些邮箱</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
 
   
 
@@ -432,10 +274,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/01/12/思考/写给自己/" itemprop="url">
-                  写给自己
-                </a>
+                写给自己
               
             
           </h1>
@@ -518,41 +357,64 @@
       
 
       
-        
-          
-            <h3 id="说点什么呢。"><a href="#说点什么呢。" class="headerlink" title="说点什么呢。"></a>说点什么呢。</h3><p>hello world</p>
+        <h3 id="说点什么呢。"><a href="#说点什么呢。" class="headerlink" title="说点什么呢。"></a>说点什么呢。</h3><p>hello world</p>
 
-          
-        
       
     </div>
 
     <div>
       
+        
+
+      
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/随笔/" rel="tag"># 随笔</a>
+          
+        </div>
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/01/19/node/使用node发送Email/" rel="prev" title="使用node发送E-mail">
+                使用node发送E-mail <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -560,6 +422,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -579,8 +452,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.png"
@@ -665,6 +547,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#说点什么呢。"><span class="nav-number">1.</span> <span class="nav-text">说点什么呢。</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
@@ -771,6 +669,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
@@ -787,9 +689,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'liansky';
-      var disqus_identifier = 'index.html';
+      var disqus_identifier = '2017/01/12/思考/写给自己/';
 
-      var disqus_title = "";
+      var disqus_title = "写给自己";
 
 
       function run_disqus_script(disqus_script) {
@@ -802,6 +704,13 @@
 
       run_disqus_script('count.js');
 
+      
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
+        run_disqus_script('embed.js');
       
 
     </script>
